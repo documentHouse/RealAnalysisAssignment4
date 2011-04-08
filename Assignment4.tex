@@ -1,0 +1,80 @@
+%\documentclass[11pt,reqno]{amsart}
+\documentclass[11pt,reqno]{article}
+\usepackage[margin=.8in, paperwidth=8.5in, paperheight=11in]{geometry}
+%\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent7
+\usepackage{graphicx}
+\usepackage{pstricks}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{caption}
+\pagestyle{plain}
+%\renewcommand{\topfraction}{0.3}
+%\renewcommand{\bottomfraction}{0.8}
+%\renewcommand{\textfraction}{0.07}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Real Analysis $\mathbb{I}$: \\ Assignment 4}
+\author{Andrew Rickert}
+\date{Started: April 8, 2011 \\ \hspace{1pt} Ended: April ??  2011}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+
+% Page 1
+\begin{flushleft} 
+\textbf{Class 18.100B} - Problem 1\\
+\rule{500pt}{1pt}\\
+\end{flushleft} 
+
+We are intended to find an open cover of $E = \{(x_1,x_2) | \mathbb{R}^2 : x_1^2 + x_2^2 < 1\} \subset \mathbb{R}^2$. Let the open cover be $C = \cup_{n = 1} U_n$ where $U_n = \{ (x_1,x_2) | \mathbb{R}^2 : x_1^2 + x_2^2 < 1-\frac{1}{n} \}$. Clearly $U_n \subset C$ for all $n \in \mathbb{N}$ but suppose $(x_1,x_2) \in E$ and $ x_1^2 + x_2^2  = r < 1$. Let $\epsilon < 1 - r$, and there must be a $n'$ such that $\frac{1}{n'} < \epsilon$ otherwise $\frac{1}{n} \ge \epsilon \implies \frac{1}{\epsilon} > n$ for all $n \in \mathbb{N}$. Since $\frac{1}{n'} < \epsilon < 1 - r$ this implies that $r < 1 - \frac{1}{n'}$. This means $(x_1,x_2) \in U_{n'}$ so $C \subset \cup U_n$ which implies that $C = \cup U_n$. So, $\cup U_n$ is an open cover. \\
+\indent If we take a finite subset of these then $U_{n_1} \cup U_{n_2} \cdots \cup U_{n_m}$ is not an open cover. Let $p = $min$(n_1,n_2,\cdots,n_m)$ then $U_p$ is the 'largest' subset in the finite subcollection. Since $p < 1$ we can find an $r < 1 - p$ that is, there is an $r$ such that $p < 1 - r$ < 1. If we let $(x_1,x_2)$ be such that $x_1 = 0$ and $x_2 = \sqrt{1-r}$ then we have $(x_1,x_2) \in E$ but $x_1^2 + x_2^2 = 1 - r > p$ so $(x_1,x_2) \notin U_{n_1} \cup U_{n_2} \cdots U_{n_m}$. This must be true for any finite subcollection of $U_n$ and there is no finite subcover of the collection $U_n$.
+
+\vspace{15pt}
+\begin{flushleft} 
+\textbf{Class 18.100B} - Problem 2\\
+\rule{500pt}{1pt}\\
+\end{flushleft} 
+
+\vspace{15pt}
+\begin{flushleft} 
+\textbf{Class 18.100B} - Problem 3\\
+\rule{500pt}{1pt}\\
+\end{flushleft} 
+
+\vspace{15pt}
+\begin{flushleft} 
+\textbf{Class 18.100B} - Problem 4\\
+\rule{500pt}{1pt}\\
+\end{flushleft} 
+
+\vspace{15pt}
+\begin{flushleft} 
+\textbf{Class 18.100B} - Problem 5\\
+\rule{500pt}{1pt}\\
+\end{flushleft} 
+
+\vspace{15pt}
+\begin{flushleft} 
+\textbf{Class 18.100B} - Problem 6\\
+\rule{500pt}{1pt}\\
+\end{flushleft} 
+
+\vspace{15pt}
+\begin{flushleft} 
+\textbf{Class 18.100B} - Problem 7\\
+\rule{500pt}{1pt}\\
+\end{flushleft} 
+
+\vspace{15pt}
+\begin{flushleft} 
+\textbf{Class 18.100B} - Extra Problem \\
+\rule{500pt}{1pt}\\
+\end{flushleft} 
+
+\end{document}  
