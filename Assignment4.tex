@@ -33,13 +33,18 @@
 \end{flushleft} 
 
 We are intended to find an open cover of $E = \{(x_1,x_2) | \mathbb{R}^2 : x_1^2 + x_2^2 < 1\} \subset \mathbb{R}^2$. Let the open cover be $C = \cup_{n = 1} U_n$ where $U_n = \{ (x_1,x_2) | \mathbb{R}^2 : x_1^2 + x_2^2 < 1-\frac{1}{n} \}$. Clearly $U_n \subset C$ for all $n \in \mathbb{N}$ but suppose $(x_1,x_2) \in E$ and $ x_1^2 + x_2^2  = r < 1$. Let $\epsilon < 1 - r$, and there must be a $n'$ such that $\frac{1}{n'} < \epsilon$ otherwise $\frac{1}{n} \ge \epsilon \implies \frac{1}{\epsilon} > n$ for all $n \in \mathbb{N}$. Since $\frac{1}{n'} < \epsilon < 1 - r$ this implies that $r < 1 - \frac{1}{n'}$. This means $(x_1,x_2) \in U_{n'}$ so $C \subset \cup U_n$ which implies that $C = \cup U_n$. So, $\cup U_n$ is an open cover. \\
-\indent If we take a finite subset of these then $U_{n_1} \cup U_{n_2} \cdots \cup U_{n_m}$ is not an open cover. Let $p = $min$(n_1,n_2,\cdots,n_m)$ then $U_p$ is the 'largest' subset in the finite subcollection. Since $p < 1$ we can find an $r < 1 - p$ that is, there is an $r$ such that $p < 1 - r$ < 1. If we let $(x_1,x_2)$ be such that $x_1 = 0$ and $x_2 = \sqrt{1-r}$ then we have $(x_1,x_2) \in E$ but $x_1^2 + x_2^2 = 1 - r > p$ so $(x_1,x_2) \notin U_{n_1} \cup U_{n_2} \cdots U_{n_m}$. This must be true for any finite subcollection of $U_n$ and there is no finite subcover of the collection $U_n$.
+\indent If we take a finite subset of these then $U_{n_1} \cup U_{n_2} \cdots \cup U_{n_m}$ is not an open cover. Let $p = $min$(n_1,n_2,\cdots,n_m)$ then $U_p$ is the 'largest' subset in the finite subcollection. Since $p < 1$ we can find an $r < 1 - p$ that is, there is an $r$ such that $p < 1 - r$ < 1. If we let $(x_1,x_2)$ be such that $x_1 = 0$ and $x_2 = \sqrt{1-r}$ then we have $(x_1,x_2) \in E$ but $x_1^2 + x_2^2 = 1 - r > p$ so $(x_1,x_2) \notin U_{n_1} \cup U_{n_2} \cdots U_{n_m}$. This must be true for any finite subcollection of $U_n$ and there is no finite subcover with the collection $U_n$.
 
 \vspace{15pt}
 \begin{flushleft} 
 \textbf{Class 18.100B} - Problem 2\\
 \rule{500pt}{1pt}\\
 \end{flushleft} 
+
+First we must show that $d(\mathbf{x},\mathbf{y}) = \| \mathbf{x} \| + \| \mathbf{y} \|$ when $\mathbf{x} \neq \mathbf{y}$ and $d(\mathbf{x},\mathbf{x}) = 0$ is a metric. Since $\|x\| = \sqrt{\sum_i x_i^2}$ we have $\| x \| \ge 0$ since $x_i^2 \ge 0$. If we assume that $\mathbf{x} \neq \mathbf{y}$ then $\|\mathbf{x}\| \neq 0$ so  $\| \mathbf{x} \| + \|  \mathbf{y} \| > 0$. Also $d(\mathbf{x},\mathbf{y}) = 0$ by definition when $\mathbf{x} = \mathbf{y}$.\\
+\indent The symmetry property is straightforward since $d(\mathbf{x},\mathbf{y})  =  \| \mathbf{x} \| + \| \mathbf{y} \| =  \| \mathbf{y} \| + \| \mathbf{x} \|  = d(\mathbf{y},\mathbf{x})$.\\
+\indent The triangle inequality is also easy since by the remark in the first paragraph $\| \mathbf{z} \| \ge 0$ we have $\| \mathbf{z} \| + \| \mathbf{z} \| \ge 0 \implies \| \mathbf{x} \|  + \| \mathbf{y} \| +  \| \mathbf{z} \| + \| \mathbf{z} \| \ge \|  \mathbf{x} \|  + \| \mathbf{y} \|\implies \| \mathbf{x} \|  + \| \mathbf{z} \| +  \| \mathbf{z} \| + \| \mathbf{y} \| \ge \| \mathbf{x} \|  + \| \mathbf{y} \| \implies d(\mathbf{x},\mathbf{y}) \le d(\mathbf{x},\mathbf{z}) + d(\mathbf{z},\mathbf{x})$.\\
+\indent First we show that there is a set that is open with $d(\mathbf{x},\mathbf{y})$ but not with $d_{Euclid}(\mathbf{x},\mathbf{y})$. By a theorem in Rudin the set $N(\mathbf{x}) = \{ \mathbf{y} | d(\mathbf{x},\mathbf{y}) < r \}$ is open.
 
 \vspace{15pt}
 \begin{flushleft} 
