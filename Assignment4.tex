@@ -100,6 +100,18 @@ Briefly, the reason set $\{ 1 \}$ cannot have a limit point is because the defin
 \rule{500pt}{1pt}\\
 \end{flushleft} 
 
+We need a countable sequence in $[0,1]$ such that every point in the segment is a subsequential limit. Since the rationals are countable the set of all rationals in $[0,1]$ will be enough to satisfy the requirements of the theorem. This will be shown to arise from the density of the rationals.\\
+\indent To be explicit about the sequence we can let $x_0 = 0, x_1 = 1, x_2...$
+
+\vspace{15pt}
+\begin{flushleft} 
+\textbf{Class 18.100B} - Problem 8\\
+\rule{500pt}{1pt}\\
+\end{flushleft} 
+
+Closures of connected sets are connected. We note that  $E \subset \overline{E}$ where $\overline{E}$ is the closure of the set $E$. This means that if $A$ and $B$ are connected sets then for the closure of each set $\overline{A}$, and $\overline{B}$ we have $\emptyset \neq A \cap B \subset \overline{A} \cap \overline{B} \subset \overline{\overline{A}} \cap \overline{B}$. The last step comes from a theorem in rudin that says $\overline{\overline{E}} = \overline{E}$. We have shown that the intersection of one of the sets with the closure of the other set is not empty. This is the definition of connectedness so closures are connected.\\
+\indent The interiors of connected sets do not need to be connected though. If we consider the example of the sets $A = [ 0, 1 ]$ and $B = (1,2)$ we can see that these sets are connected. Since $\overline{B} = [ 1,2 ]$ then $A \cap \overline{B} = \{ 1 \}$ the sets satisfy the definition of connectedness. Since the interior of $A$ is $A^\circ = (0,1)$ we can see that $A \cap \overline{B} = \overline{A} \cap B = \emptyset $. So the interiors of connected sets are not necessarily connected.
+
 \vspace{15pt}
 \begin{flushleft} 
 \textbf{Class 18.100B} - Extra Problem \\
