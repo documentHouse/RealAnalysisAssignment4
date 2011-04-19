@@ -82,7 +82,7 @@ So we have found a sequence in $E$ that converges to any rational $x$ such that 
 \end{flushleft} 
 
 For the first part we need to show that the union of two compact sets $X$ and $Y$ is compact. Let $U_{\alpha}$ be a cover of the union $X \cup Y$. Since $X \subset X \cup Y$ then $U_{\alpha}$ covers $X$. Because $X$ is compact we have a finite subcover $\{ U_{n_1}, U_{n_2}, \cdots, U_{n_m} \}$. By the same reasoning $Y \subset X \cup Y$ has a finite subcover $\{ U_{p_1}, U_{p_2}, \cdots, U_{p_q} \}$. The union of these two subcovers is then a cover of $X \cup Y$ and has $m + p$ elements, so we have found a finite subcover of the union and $X \cup Y$ is compact.\\
-\indent The last part requires us to show that the intersection of compact sets is compact. By a theorem in Rudin, compact sets are closed. So, both $X$ and $Y$ are closed, by another theorem in Rudin their intersection is closed as well. Since $X \cap Y \subset X$ we have a closed subset of a compact set. According to Rudin this set must be compact as well therefore $X \cap Y$ is compact.
+\indent The last part requires us to show that the intersection of compact sets is compact. By a theorem in Rudin, compact sets are closed. So, both $X$ and $Y$ are closed, by another theorem in Rudin their intersection is closed as well. Since $X \cap Y \subset X$ we have a closed subset of a compact set. According to Rudin this set must be compact as well, therefore $X \cap Y$ is compact.
 
 \vspace{15pt}
 \begin{flushleft} 
@@ -92,7 +92,8 @@ For the first part we need to show that the union of two compact sets $X$ and $Y
 
 Briefly, the reason set $\{ 1 \}$ cannot have a limit point is because the definition of the limit point requires an arbitrary neighborhood around the limit point to contain a point of the set different from the limit point. This would be impossible since 1 is the only point in the set.\\
 \indent For the problem we need to show that the limit of a convergent sequence with infinitely many distinct points is the limit point of the sequence considered as a set of points in a metric space. \\
-\indent By the definition of convergence $ \{ p_n \}$ converges to $p$ if for every $\epsilon$ there is an $N$ such that $n \ge N$ and $d(p_n,p) < \epsilon$.
+\indent By the definition of convergence $ \{ p_n \}$ converges to $p$ if for every $\epsilon$ there is an $N$ such that $n \ge N$ and $d(p_n,p) < \epsilon$. Now we can conceptualize the sentence 'infinitely many distinct points' as saying for any given $n'$, there exists an $m > n'$ such that $p_m$ is not equal to any $p_i$ with $i < n'$. In other words there always exists a distinct element in the sequence after any given point. This point can also always be chosen to be different from $p$ for otherwise $p_i = p$ for $i > n'$. \\
+\indent Now we let $n' = N$, by the previous discussion there is a distinct $p_m$ such that $m > N$. By the convergence of $\{ p_n \}$ we have $d(p_m,p) < \epsilon$. So, if we form the neighborhood around $p$, $N_\epsilon(p)$,  the previous comments show that there will be $p_m \in N_\epsilon(p)$ and $p_m \neq p$. Since $\epsilon$ was arbitrary we have shown that every neighborhood around the point contains an element of the sequence so $p$ is a limit point.
 
 \vspace{15pt}
 \begin{flushleft} 
