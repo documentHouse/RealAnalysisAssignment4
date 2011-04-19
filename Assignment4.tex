@@ -55,7 +55,7 @@ First we must show that $d(\mathbf{x},\mathbf{y}) = \| \mathbf{x} \| + \| \mathb
 
 To determine which are the compact sets in $\emph{X}$ we need to determine which are the open sets that can be used to cover a set in $\emph{X}$.
 From the definition of open sets it is clear that we need to focus on the neighborhoods that are possible for the given metric. To this end it is clear that there are two types of neighborhoods. For a neighborhood $N_r(x)$ where $r < 1$ the only point that satisfies the requirement on the radius is $x$ itself since $d(x,y) = 0$ if $x = y$ or $d(x,y) = 1$ otherwise.  \\
-\indent However if $r \ge 1$ then every point in $\emph(X)$ satisfies the requirement of the neighborhood.\\
+\indent However if $r \ge 1$ then every point in $\emph{X}$ satisfies the requirement of the neighborhood.\\
 \indent From this discussion then it is shown that either a neighborhood consists of a single point or it contains the entire space. Now for any infinite set a cover of the set could be a neighborhood of radius $\frac{1}{2}$, or $N_{\frac{1}{2}}(x)$ centered around everypoint in the set. Since this neighborhood only contains one point it is clear that a finite subset would leave out some of the points in the set for otherwise the set would itself be finite. So infinite sets are not compact. This only leaves the possibility of finite sets being compact. \\
 \indent Consider a finite set, any cover will include all the points in the set by definition. A one to one correspondence between the open set that contains a given point and that point always determines a finite cover since the number of points is finite. Therefore all the compact sets in the space are the finite sets.
 
@@ -89,6 +89,10 @@ For the first part we need to show that the union of two compact sets $X$ and $Y
 \textbf{Class 18.100B} - Problem 6\\
 \rule{500pt}{1pt}\\
 \end{flushleft} 
+
+Briefly, the reason set $\{ 1 \}$ cannot have a limit point is because the definition of the limit point requires an arbitrary neighborhood around the limit point to contain a point of the set different from the limit point. This would be impossible since 1 is the only point in the set.\\
+\indent For the problem we need to show that the limit of a convergent sequence with infinitely many distinct points is the limit point of the sequence considered as a set of points in a metric space. \\
+\indent By the definition of convergence $ \{ p_n \}$ converges to $p$ if for every $\epsilon$ there is an $N$ such that $n \ge N$ and $d(p_n,p) < \epsilon$.
 
 \vspace{15pt}
 \begin{flushleft} 
