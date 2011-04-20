@@ -20,7 +20,7 @@
 
 \title{Real Analysis $\mathbb{I}$: \\ Assignment 4}
 \author{Andrew Rickert}
-\date{Started: April 8, 2011 \\ \hspace{1pt} Ended: April ??  2011}                                           % Activate to display a given date or no date
+\date{Started: April 8, 2011 \\ \hspace{1pt} Ended: April 20  2011}                                           % Activate to display a given date or no date
 
 \begin{document}
 \maketitle
@@ -102,7 +102,8 @@ Briefly, the reason set $\{ 1 \}$ cannot have a limit point is because the defin
 \end{flushleft} 
 
 We need a countable sequence in $[0,1]$ such that every point in the segment is a subsequential limit. Since the rationals are countable the set of all rationals in $[0,1]$ will be enough to satisfy the requirements of the theorem. This will be shown to arise from the density of the rationals.\\
-\indent To be explicit about the sequence we can let $x_0 = 0, x_1 = 1, x_2...$
+\indent First we note that any neighborhood of a point in $[0,1]$ contains infinitely many elements. To see we observe if $x \in [0,1]$ then there is a rational in $N_\epsilon(x)$ since both $x-\epsilon$ and $x+\epsilon$ are real numbers. This is because a theorem in rudin says that between any two reals there is a rational so we can find a $x' \in [0,1]$ such that $x-\epsilon < x' < x$ or $x < x' < x + \epsilon$. If we pick a new neighborhood $N_\epsilon(x)$ such that $epsilon < x' - x$ then we may find a new point in $[0,1]$ by rudin's theorem. We may continue this process to get an infinite number of points.\\
+\indent Since the rationals are countable we can put them in a sequence $\{ p_n \}$. Lets take an element $x \in [0,1]$, and consider the neighborhood $N_r(x)$. If $x = 0$ or $x = 1$ we let $r = \frac{1}{2}$ otherwise we let $r = \text{min}(x,1-x)$. By the previous paragraph we can find a member of the sequence  $p_{n_1}$ in $[0,1]$ such that $|p_{n_1} -x| < r$. Since every interval contains an infinity of members of $[0,1]$ we see by the same reasoning as before that we can find a $p_{n_2}$ in $[0,1]$ such that $n_2 > n_1$ and $|p_{n_2} - x| < \frac{r}{2}$. By repeating the previous reasoning we find a sequence such that $|p_{n_k} - x| < \frac{r}{2^k}$. Since $\lim_{k \to \infty} \frac{r}{2^k} \to 0$ we have $p_{n_k} \to x$ where the subsequence is entirely in $[0,1]$.
 
 \vspace{15pt}
 \begin{flushleft} 
